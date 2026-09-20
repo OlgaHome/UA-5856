@@ -1,13 +1,25 @@
-strong{
-    color: #2563eb;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #222;
+}
+
+/* Основна частина сторінки */
 .container {
     display: flex;
     gap: 40px;
     max-width: 1100px;
-    margin: 50px auto;
+    margin: 40px auto;
+    padding: 20px;
 }
-.profile{
+
+/* Ліва частина */
+.profile {
     width: 30%;
     text-align: center;
 }
@@ -15,15 +27,57 @@ strong{
 .profile img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover;
 }
+
+/* Навігація */
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+nav a {
+    display: block;
+    width: 250px;
+    padding: 10px 15px;
+    background-color: #eef3ff;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Права частина */
 .content {
     width: 70%;
 }
-.block{
-    border: 1px solod #ccc;
+
+.block {
+    background-color: white;
+    border: 1px solid #ddd;
     padding: 25px;
     margin-bottom: 25px;
-    border-radius: 5 px;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    color: #222;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #222;
+    color: white;
 }
