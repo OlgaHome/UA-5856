@@ -12,3 +12,37 @@
 .logo span {
     color: blue;
 }
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+.stats {
+    display: flex;
+    gap: 20px;
+}
+.stat-card {
+    flex: 1;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
