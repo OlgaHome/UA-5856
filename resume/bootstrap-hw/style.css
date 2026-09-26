@@ -46,3 +46,29 @@
     padding: 20px;
     text-align: center;
 }
+
+.course-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.courses {
+    margin-top: 30px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 75%;
+    background-color: blue;
+    border-radius: 5px;
+}
