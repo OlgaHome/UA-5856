@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    padding: 15px 40px;
+}
+.logo {
+    color: white;
+}
+
+.logo span {
+    color: blue;
+}
