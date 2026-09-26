@@ -1,71 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduPortal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+
 <body>
+
+    <!-- ================= HEADER ================= -->
+
     <header class="header">
+
         <div class="logo">
             <span>EDU</span>PORTAL
         </div>
-    
+
         <nav class="menu">
             <a href="#">Dashboard</a>
             <a href="#">Courses</a>
             <a href="#">Schedules</a>
             <a href="#">Account</a>
         </nav>
+
     </header>
-    <main>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+
+        <!-- WELCOME -->
+
         <section class="welcome">
+
             <h1>Welcome back, Academic Developer!</h1>
-            <p>Here's what's happening with your courses today.</p>
+
+            <p>
+                This reference implementation demonstrates a fully responsive
+                dashboard using the Bootstrap 5.3 grid layout, advanced system
+                forms, panels (cards), and navigation bars.
+            </p>
+
+            <div class="welcome-buttons">
+
+                <button class="btn btn-primary">
+                    View Syllabus
+                </button>
+
+                <button class="btn btn-outline-secondary">
+                    Quick Start
+                </button>
+
+            </div>
+
         </section>
-        <section class="stats">
-            <div class="stat-card">
-                <h2>5</h2>
-                <p>Active Courses</p>
-            </div>
-        
-            <div class="stat-card">
-                <h2>12</h2>
-                <p>Completed</p>
-            </div>
-        
-            <div class="stat-card">
-                <h2>87%</h2>
-                <p>Average Score</p>
-            </div>
-        </section>
-        <section class="courses">
-            <h2>My Courses</h2>
-        
-            <div class="course-list">
-                <div class="course-card">
-                    <h3>Web Development</h3>
-                    <p>Progress</p>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="dashboard">
+
+
+            <!-- CARD 1 -->
+
+            <article class="dashboard-card">
+
+                <div class="card-title card-title-blue">
+                    Frontend Engineering
+                </div>
+
+                <div class="card-content">
+
+                    <h2>
+                        Bootstrap 5 Component Mastery
+                    </h2>
+
+                    <p>
+                        Learn to master responsive utilities, grid breakdowns,
+                        flex layout mappings, and unified CSS variable
+                        customizations.
+                    </p>
+
+
+                    <div class="progress-info">
+
+                        <span>Progress</span>
+
+                        <span>75%</span>
+
                     </div>
-                </div>
-        
-                <div class="course-card">
-                    <h3>UI/UX Design</h3>
-                    <p>Progress</p>
-                </div>
-        
-                <div class="course-card">
-                    <h3>JavaScript</h3>
-                    <p>Progress</p>
+
+
                     <div class="progress">
-    <div class="progress-bar"></div>
-</div>
+
+                        <div class="progress-bar bg-success" style="width: 75%">
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-outline-primary card-button">
+                        Resume Module
+                    </button>
+
                 </div>
-            </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+
+            <article class="dashboard-card">
+
+                <div class="card-title card-title-yellow">
+                    Upcoming Deadlines
+                </div>
+
+
+                <div class="card-content deadlines">
+
+
+                    <div class="deadline-item">
+
+                        <div>
+
+                            <strong>
+                                Grid System Layout Lab
+                            </strong>
+
+                            <small>
+                                Due in 2 days
+                            </small>
+
+                        </div>
+
+                        <span class="badge text-bg-danger">
+                            High
+                        </span>
+
+                    </div>
+
+
+                    <div class="deadline-item">
+
+                        <div>
+
+                            <strong>
+                                Form Validation Hook
+                            </strong>
+
+                            <small>
+                                Due in 5 days
+                            </small>
+
+                        </div>
+
+                        <span class="badge text-bg-secondary">
+                            Medium
+                        </span>
+
+                    </div>
+
+
+                    <div class="deadline-item">
+
+                        <div>
+
+                            <strong>
+                                Accessible Navbar Audit
+                            </strong>
+
+                            <small>
+                                Due next week
+                            </small>
+
+                        </div>
+
+                        <span class="badge text-bg-info">
+                            Low
+                        </span>
+
+                    </div>
+
+
+                    <button class="btn btn-dark card-button">
+                        View All Tasks
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+
+            <article class="dashboard-card">
+
+                <div class="card-title card-title-dark">
+                    Academic Overview
+                </div>
+
+
+                <div class="card-content">
+
+
+                    <div class="overview-grid">
+
+
+                        <div class="overview-item">
+
+                            <strong class="text-primary">
+                                4.8
+                            </strong>
+
+                            <span>
+                                CURRENT GPA
+                            </span>
+
+                        </div>
+
+
+                        <div class="overview-item">
+
+                            <strong class="text-success">
+                                12
+                            </strong>
+
+                            <span>
+                                PASSED
+                            </span>
+
+                        </div>
+
+
+                        <div class="overview-item">
+
+                            <strong class="text-warning">
+                                2
+                            </strong>
+
+                            <span>
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="overview-item">
+
+                            <strong class="text-info">
+                                98%
+                            </strong>
+
+                            <span>
+                                ATTENDANCE
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <button class="btn btn-outline-secondary card-button">
+                        Download Transcript
+                    </button>
+
+
+                </div>
+
+            </article>
+
+
         </section>
+
+
+        <!-- ================= REGISTRATION ================= -->
+
+        <section class="registration">
+
+
+            <h2>
+                Course Registration &amp; Audit
+            </h2>
+
+
+            <p class="registration-description">
+                Please complete the configuration profile below to assign
+                student groups and resources.
+            </p>
+
+
+            <hr>
+
+
+            <form>
+
+
+                <!-- PERSONAL INFORMATION -->
+
+
+                <fieldset>
+
+
+                    <legend>
+                        Personal Information
+                    </legend>
+
+
+                    <div class="form-grid">
+
+
+                        <div>
+
+                            <label for="full-name" class="form-label">
+                                Full Name
+                            </label>
+
+
+                            <input type="text" id="full-name" class="form-control" placeholder="John Doe">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="email" class="form-label">
+                                Email Address
+                            </label>
+
+
+                            <input type="email" id="email" class="form-control" placeholder="johndoe@university.edu">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="password" class="form-label">
+                                Security Token (Password)
+                            </label>
+
+
+                            <input type="password" id="password" class="form-control" value="12345678">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="date" class="form-label">
+                                Enrollment Term Date
+                            </label>
+
+
+                            <input type="date" id="date" class="form-control">
+
+                        </div>
+
+
+                    </div>
+
+
+                </fieldset>
+
+
+                <!-- COURSE PREFERENCES -->
+
+
+                <fieldset>
+
+
+                    <legend>
+                        Course Preferences
+                    </legend>
+
+
+                    <div class="preferences-grid">
+
+
+                        <div>
+
+
+                            <label for="track" class="form-label">
+                                Primary Development Track
+                            </label>
+
+
+                            <select id="track" class="form-select">
+
+                                <option selected>
+                                    Choose a pathway...
+                                </option>
+
+                                <option>
+                                    Frontend Development
+                                </option>
+
+                                <option>
+                                    Backend Development
+                                </option>
+
+                                <option>
+                                    Full Stack Development
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+                        <div>
+
+
+                            <label class="form-label">
+                                Prior UI Framework Experience
+                            </label>
+
+
+                            <div class="radio-group">
+
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="radio" name="experience" id="none" checked>
+
+                                    <label class="form-check-label" for="none">
+                                        None
+                                    </label>
+
+                                </div>
+
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="radio" name="experience" id="some">
+
+                                    <label class="form-check-label" for="some">
+                                        Some (1-2 Projects)
+                                    </label>
+
+                                </div>
+
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="radio" name="experience" id="advanced">
+
+                                    <label class="form-check-label" for="advanced">
+                                        Advanced
+                                    </label>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- GOALS -->
+
+
+                    <div class="goals">
+
+
+                        <label for="goals" class="form-label">
+                            Statement of Academic Goals
+                        </label>
+
+
+                        <textarea id="goals" class="form-control" rows="3"
+                            placeholder="Briefly specify what you intend to build with Bootstrap layout engines..."></textarea>
+
+
+                    </div>
+
+
+                    <!-- SUBSCRIBE -->
+
+
+                    <div class="form-check form-switch subscribe">
+
+
+                        <input class="form-check-input" type="checkbox" role="switch" id="subscribe" checked>
+
+
+                        <label class="form-check-label" for="subscribe">
+
+                            Subscribe to community lab updates and framework
+                            patch notes
+
+                        </label>
+
+
+                    </div>
+
+
+                </fieldset>
+
+
+                <!-- BUTTONS -->
+
+
+                <div class="form-buttons">
+
+
+                    <button type="reset" class="btn btn-outline-danger">
+
+                        Reset Form
+
+                    </button>
+
+
+                    <button type="submit" class="btn btn-success">
+
+                        Submit Registration
+
+                    </button>
+
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+
     </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+
+    <footer>
+
+        © 2026 EduPortal. Built as a pedagogical example for responsive CSS grids.
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
 </body>
+
 </html>
