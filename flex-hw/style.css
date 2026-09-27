@@ -1,4 +1,4 @@
-/* GENERAL */
+В/* GENERAL */
 
 * {
     box-sizing: border-box;
@@ -21,14 +21,14 @@ body {
 
     padding: 20px 8%;
 
-    background-color: #111827;
+    background-color: white;
 }
 
 
 /* LOGO */
 
 .logo {
-    color: white;
+    color: #111827;
     font-size: 22px;
     font-weight: bold;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .menu a {
-    color: #d1d5db;
+    color: #374151;
     text-decoration: none;
 }
 
@@ -71,14 +71,14 @@ body {
 
 .login {
     background: transparent;
-    color: white;
-    border: 1px solid #6b7280;
+    color: #111827;
+    border: none;
 }
 
 .signup {
-    background-color: #3b82f6;
+    background-color: #111827;
     color: white;
-    border: 1px solid #3b82f6;
+    border: none;
 }
 
 
@@ -94,6 +94,8 @@ body {
     text-align: center;
 
     padding: 60px 20px;
+    background-color: #111827;
+    color: white;
 }
 
 
@@ -110,9 +112,6 @@ body {
     line-height: 1.1;
 }
 
-.hero h1 span {
-    color: #3b82f6;
-}
 
 .hero p {
     max-width: 600px;
@@ -140,15 +139,15 @@ body {
 }
 
 .start {
-    border: 1px solid #3b82f6;
-    background-color: #3b82f6;
-    color: white;
+    background-color: white;
+    color: #111827;
+    border: 1px solid white;
 }
 
 .explore {
-    border: 1px solid #d1d5db;
-    background-color: white;
-    color: #1f2937;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #6b7280;
 }
 
 /* LEARNING PATHS */
@@ -240,14 +239,22 @@ body {
 
 footer {
     background-color: #111827;
-
     color: #9ca3af;
+    padding: 25px 8%;
 
-    text-align: center;
-
-    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
 
 /* MOBILE */
 
