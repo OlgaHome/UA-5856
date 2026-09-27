@@ -556,6 +556,23 @@ footer {
 /* =========================================
    SMALL MOBILE
 ========================================= */
+ .mobile-menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu {
+            display: none;
+        }
+    
+        .mobile-menu {
+            display: block;
+            background: transparent;
+            color: #adb5bd;
+            border: 1px solid #495057;
+            border-radius: 5px;
+            font-size: 24px;
+            padding: 2px 10px;
+        }
 
 @media (max-width: 480px) {
 
@@ -579,5 +596,10 @@ footer {
         min-width: 0;
         flex: 1;
     }
+    
+    .menu-toggle{
+        display: block;
+    }
+
 
 }
