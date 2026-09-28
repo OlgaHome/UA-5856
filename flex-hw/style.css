@@ -154,6 +154,7 @@ body {
 
 .learning-paths {
     text-align: center;
+    padding-top: 55px;
     margin-bottom: 35px;
 }
 
@@ -188,7 +189,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: white;
+    background-color: #f9fafb;
 
     padding: 30px;
 
@@ -197,27 +198,27 @@ body {
 }
 
 .card-icon {
-    width: 45px;
-    height: 45px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    font-size: 32px;
     margin-bottom: 20px;
-
-    border-radius: 8px;
-
-    background-color: #dbeafe;
-    color: #2563eb;
-
-    font-weight: bold;
+    
 }
 
 .card h2 {
     margin: 0 0 15px;
     font-size: 20px;
 }
+
+ .card-one {
+    color:red;
+ }
+
+ .card-two {
+    color:#2563eb;
+ }
+
+ .card-thee {
+    color:green;
+ }
 
 .card p {
     color: #6b7280;
@@ -238,8 +239,8 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #111827;
-    color: #9ca3af;
+    background-color: #f5f7fc;
+    color: #7e848d;
     padding: 25px 8%;
 
     display: flex;
