@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .welcome {
+            background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+            color: #fff;
+            border-radius: 0.75rem;
+        }
+
+        .card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+
+        footer {
+            background-color: #212529;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">EDUPORTAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Відкрити навігацію">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedules</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#account" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#account">Профіль</a></li>
+                            <li><a class="dropdown-item" href="#registration">Реєстрація</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#home">Вийти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="container py-5">
+            <div class="welcome p-4 p-md-5 mb-5">
+                <h1 class="display-5 fw-bold mb-3">Ласкаво просимо до EduPortal</h1>
+                <p class="lead mb-4">
+                    Переглядайте курси, слідкуйте за розкладом і контролюйте свій навчальний прогрес в одному місці.
+                </p>
+                <a class="btn btn-primary btn-lg" href="#courses">Дізнатися більше</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Поточний курс</h2>
+                            <p class="card-text">Веб-розробка з Bootstrap 5</p>
+                            <span class="badge text-bg-primary">Активний</span>
+                            <div class="progress mt-3" role="progressbar" aria-valuenow="72" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar" style="width: 72%;">72%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Найближчі дедлайни</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0 d-flex justify-content-between">
+                                    Практична робота №3
+                                    <span class="badge text-bg-warning">12 квітня</span>
+                                </li>
+                                <li class="list-group-item px-0 d-flex justify-content-between">
+                                    Тест з CSS
+                                    <span class="badge text-bg-danger">15 квітня</span>
+                                </li>
+                                <li class="list-group-item px-0 d-flex justify-content-between">
+                                    Проєкт лендингу
+                                    <span class="badge text-bg-secondary">20 квітня</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Академічна статистика</h2>
+                            <p class="card-text mb-2">Середній бал: <strong>91</strong></p>
+                            <p class="card-text mb-2">Завершено курсів: <strong>8</strong></p>
+                            <p class="card-text mb-0">Активних курсів: <strong>3</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="bg-white py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Навчальні курси</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <div class="alert alert-warning" role="alert">
+                            Оберіть курс, щоб почати навчання або перевірити свій прогрес.
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">HTML і семантика</h3>
+                                <p class="card-text">Основи розмітки, структура сторінки та доступність.</p>
+                                <a class="btn btn-outline-primary" href="#registration">Зареєструватися</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Bootstrap 5</h3>
+                                <p class="card-text">Сітка, компоненти, utility-класи та адаптивний навбар.</p>
+                                <a class="btn btn-outline-primary" href="#registration">Зареєструватися</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Адаптивний дизайн</h3>
+                                <p class="card-text">Mobile-first підхід і коректне відображення на всіх екранах.</p>
+                                <a class="btn btn-outline-primary" href="#registration">Зареєструватися</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="container py-5">
+            <h2 class="text-center mb-4">Розклад</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>День</th>
+                            <th>Курс</th>
+                            <th>Час</th>
+                            <th>Формат</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понеділок</td>
+                            <td>HTML і семантика</td>
+                            <td>10:00 – 11:30</td>
+                            <td><span class="badge text-bg-info">Онлайн</span></td>
+                        </tr>
+                        <tr>
+                            <td>Середа</td>
+                            <td>Bootstrap 5</td>
+                            <td>12:00 – 13:30</td>
+                            <td><span class="badge text-bg-success">Аудиторія</span></td>
+                        </tr>
+                        <tr>
+                            <td>П’ятниця</td>
+                            <td>Адаптивний дизайн</td>
+                            <td>15:00 – 16:30</td>
+                            <td><span class="badge text-bg-info">Онлайн</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="registration" class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <h2 class="mb-4">Course Registration &amp; Audit</h2>
+                        <div id="formAlert" class="alert alert-success d-none" role="alert">
+                            Дані успішно збережено!
+                        </div>
+                        <form id="registrationForm" class="needs-validation" novalidate>
+                            <fieldset class="border rounded p-3 p-md-4 bg-white">
+                                <legend class="float-none w-auto px-2 fs-5">Персональна інформація</legend>
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="fullName" class="form-label">ПІБ</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                                        <div class="invalid-feedback">Вкажіть прізвище та ім’я.</div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback">Вкажіть коректну email-адресу.</div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="phone" class="form-label">Телефон</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                                        <div class="invalid-feedback">Вкажіть номер телефону.</div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="course" class="form-label">Курс</label>
+                                        <select class="form-select" id="course" name="course" required>
+                                            <option value="">Оберіть курс</option>
+                                            <option value="html">HTML і семантика</option>
+                                            <option value="bootstrap">Bootstrap 5</option>
+                                            <option value="adaptive">Адаптивний дизайн</option>
+                                        </select>
+                                        <div class="invalid-feedback">Оберіть курс.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="comment" class="form-label">Коментар</label>
+                                        <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="agree" required>
+                                            <label class="form-check-label" for="agree">
+                                                Погоджуюсь на обробку персональних даних
+                                            </label>
+                                            <div class="invalid-feedback">Потрібна ваша згода.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex flex-wrap gap-2">
+                                        <button type="submit" class="btn btn-primary">Зберегти</button>
+                                        <button type="reset" class="btn btn-outline-secondary">Скасувати</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="account" class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="h4 mb-3">Акаунт студента</h2>
+                            <p class="mb-1"><strong>Ім’я:</strong> Студент EduPortal</p>
+                            <p class="mb-1"><strong>Група:</strong> ІПЗ-21</p>
+                            <p class="mb-0"><strong>Статус:</strong> Активний</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <span id="currentYear"></span> EduPortal. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        const form = document.getElementById("registrationForm");
+        const formAlert = document.getElementById("formAlert");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            formAlert.classList.add("d-none");
+
+            if (!form.checkValidity()) {
+                form.classList.add("was-validated");
+                return;
+            }
+
+            form.classList.add("was-validated");
+            formAlert.classList.remove("d-none");
+            form.reset();
+            form.classList.remove("was-validated");
+        });
+    </script>
+</body>
+
+</html>

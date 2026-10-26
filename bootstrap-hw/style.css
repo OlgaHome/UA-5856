@@ -573,6 +573,7 @@ footer {
             font-size: 24px;
             padding: 2px 10px;
         }
+    }
 
 @media (max-width: 480px) {
 
@@ -600,6 +601,124 @@ footer {
     .menu-toggle{
         display: block;
     }
+    /* На комп’ютері приховуємо кнопку мобільного меню */
+ .menu-toggle {
+    display: none;
+ }
 
+/* Показуємо тільки на екранах до 768px включно */
+  @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+ }
+}
+.menu-toggle {
+    display: none;
+}
 
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+.menu .dropdown-menu .dropdown-item {
+    color: #000;
+}
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .menu.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: #212529;
+        z-index: 1000;
+    }
+}
+@media (min-width: 769px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px max(24px, calc((100% - 1320px) / 2));
+    }
+
+    .header .menu {
+        display: flex;
+        flex: 0 0 auto;
+        width: auto;
+        margin-left: auto;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .header .menu>a,
+    .header .menu>.dropdown>a {
+        color: #adb5bd;
+        text-decoration: none;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .menu.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        background: #212529;
+        z-index: 1000;
+    }
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 40px;
+        padding: 0;
+        background: transparent;
+        border: 1px solid #ffffff26;
+        border-radius: 6px;
+        color: #ffffff8c;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: currentColor;
+        box-shadow:
+            0 -8px 0 currentColor,
+            0 8px 0 currentColor;
+    }
 }
