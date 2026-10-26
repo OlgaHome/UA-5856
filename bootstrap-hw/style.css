@@ -60,11 +60,9 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 970px;
-
-    margin: 50px auto;
-
-    padding: 0 15px;
+    max-width: 1320px;
+    margin: 16px auto;
+    padding: 0 12px;
 }
 
 
@@ -294,15 +292,13 @@ body {
 ========================= */
 
 .registration {
-    max-width: 800px;
-
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-
+    padding: 16px;
     background-color: white;
-
-    padding: 35px;
-
-    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    border-radius: 0;
 }
 
 .registration h2 {
@@ -508,9 +504,11 @@ footer {
 
     /* DASHBOARD */
 
-    .dashboard {
-        flex-direction: column;
-    }
+   .dashboard {
+       display: flex;
+       gap: 0;
+       margin-bottom: 16px;
+   }
 
 
     /* REGISTRATION */
@@ -653,7 +651,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px max(24px, calc((100% - 1320px) / 2));
+        padding: 8px max(12px, calc((100% - 1320px) / 2 + 12px));
     }
 
     .header .menu {
@@ -720,5 +718,32 @@ footer {
         box-shadow:
             0 -8px 0 currentColor,
             0 8px 0 currentColor;
+    }
+}
+@media (min-width: 769px) {
+    .header {
+        min-height: 62px;
+        box-sizing: border-box;
+    }
+
+    .header .logo {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .header .menu {
+        gap: 16px;
+    }
+
+    .header .menu>a,
+    .header .menu>.dropdown>a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .header .menu>a:first-child {
+        color: #fff;
     }
 }
